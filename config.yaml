@@ -1,0 +1,38 @@
+project:
+  name: "Manual_AI_Image_Detection"
+  seed: 42
+  output_dir: "./results"
+
+data:
+  image_dir: "./data/images"
+  real_dir: "real"
+  fake_dir: "fake"
+  image_extensions: [".png", ".jpg", ".jpeg"]
+
+preprocessing:
+  normalize: true
+  resize: null 
+  grayscale: false 
+
+methods:
+  dft:
+    enabled: true
+    num_freq_bins: 50
+    compute_radial_profile: true
+    
+  dct:
+    enabled: true
+    block_size: 8
+    
+  color:
+    enabled: true
+    color_spaces: ["RGB", "YCbCr"]
+    
+  variance:
+    enabled: true
+    median_filter_size: 5
+
+visualization:
+  save_plots: true
+  show_individual_plots: false
+  dpi: 150
