@@ -4,10 +4,11 @@ project:
   output_dir: "./results"
 
 data:
-  image_dir: "./data/images"
+  image_dir: "./data/train"
   real_dir: "real"
   fake_dir: "fake"
   image_extensions: [".png", ".jpg", ".jpeg"]
+
 
 preprocessing:
   normalize: true

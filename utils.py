@@ -7,6 +7,8 @@ from pathlib import Path
 from PIL import Image
 import cv2
 from tqdm import tqdm
+from download_kaggle_data import download_cifake_kaggle
+
 
 
 def load_image(image_path):
